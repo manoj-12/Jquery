@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.js"></script>
+    <style>
+        .mainDiv .box1 {
+            height: 200px;
+            width: 400px;
+            border: 2px solid red;
+        }
+
+        .second {
+            height: 100px;
+            border: 1px solid red;
+        }
+    </style>
+    <title>Jquery</title>
+</head>
+
+<body>
+    <h1>Jquery Start Date 16-06-2021</h1>
+    <div class="mainDiv">
+        <!-- <div class="box1">
+            <h1 class="heading">box1</h1>
+            <p class="para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, cumque.
+            </p>
+            <input type="text" id="intfld">name
+        </div> -->
+        <form action="" id="sform">
+            <label for="name">Nane</label>
+            <input type="text" id="name"><br><br>
+            <label for="last">Sir Name</label>
+            <input type="text" id="last"><br><br>
+            <section>Country
+                <select name="selectbox" id="selectbox">
+                    <option value="">Select Country</option>
+                    <option value="India">India</option>
+                    <option value="Pak">Pak</option>
+                    <option value="Russian">Russian</option>
+                </select>
+            </section><br><br><br>
+            <button class="">Submit</button>
+        </form>
+        <div class="second">
+
+        </div>
+        <!-- <ul>
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Banana</li>
+            <li>Lichi</li>
+        </ul> -->
+    </div>
+    <script>
+        //1. basic syntex
+        // $(document).ready(function(){
+        //     alert("Jquery CDN Work");
+        // });
+
+        // 1. Focus:- Input Par Click krte hi Focus Apply Ho jata.
+        // $(document).ready(function(){
+        //     $("#name").focus(function(){
+        //         $(this).css("background-color","red")
+        //     });
+        // });
+
+
+
+
+
+        // 2. Blur :- jaise hi input se mouse dusri jagah click karte  waiae hi blur apply ho jata hai
+        // $(document).ready(function(){
+        //     $("#name").blur(function(){
+        //         $(this).css("background-color","red")
+        //     });
+        // }); 
+
+
+
+
+        // 3. change :- Esaka Use Select Tag ke sath kiya jata hai jaise hi  select t6ag ki value change ho ti weaise hi ye apply ho jata hai  
+
+        // $(document).ready(function(){
+        //     $("#selectbox").change(function(){
+        //         var A = $(this).val();
+        //         $(".second").text("you are select Countery  "+A);
+        //     });
+
+        // });
+
+
+
+
+        // 4. select :- input box k andar kuch bhi likha ho usako jaise hi select krte h  waise hi ye 
+        //apply ho jata hai
+        // $(document).ready(function(){
+        //     $("#name").select(function(){
+        //         var M = $("#name").val();
+        //         $(".second").html("Your are Select "+M)
+        //     });
+        // });
+        // 5. submit :-  esaka use submit button k sath kiya jata  h
+        $(document).ready(function () {
+            $("#sform").submit(function () {
+                alert("Succses  Full")
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>
